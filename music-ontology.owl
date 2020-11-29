@@ -25,6 +25,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Album">
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Band"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
     </owl:Class>
     
 
@@ -34,6 +35,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Band">
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Musician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Musician"/>
     
 
 
@@ -54,10 +61,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Musician"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Album"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Band"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_it_be_Nice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_it_be_Nice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
