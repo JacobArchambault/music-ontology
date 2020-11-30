@@ -21,9 +21,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Artist -->
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Music_Artist -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Artist"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Music_Artist"/>
     
 
 
@@ -41,7 +41,7 @@
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Artist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Music_Artist"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
