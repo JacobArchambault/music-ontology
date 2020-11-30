@@ -27,6 +27,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Music_Artist"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -38,10 +46,114 @@
     
 
 
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Music_Artist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Let&apos;s_Go_Away_for_Awhile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Let&apos;s_Go_Away_for_Awhile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
