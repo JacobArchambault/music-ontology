@@ -58,6 +58,27 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#is_Pet_Sounds_track_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#is_Pet_Sounds_track_number">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -82,6 +103,20 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_Song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_Song">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#song_appears_on_album"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
     </owl:Class>
     
 
@@ -114,6 +149,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -122,6 +158,28 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</is_Pet_Sounds_track_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Album"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Let&apos;s_Go_Away_for_Awhile"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(song)"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me"/>
+        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
     </owl:NamedIndividual>
     
 
@@ -130,6 +188,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -159,6 +218,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -167,6 +227,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -175,6 +236,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -183,6 +245,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -191,6 +254,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -199,6 +263,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -207,27 +272,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Let&apos;s_Go_Away_for_Awhile">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(album) -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(album)">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Album"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Let&apos;s_Go_Away_for_Awhile"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(song)"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -236,6 +281,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(song)">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -244,6 +290,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -252,6 +299,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <is_Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</is_Pet_Sounds_track_number>
     </owl:NamedIndividual>
     
 
@@ -269,6 +317,7 @@
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me"/>
@@ -278,7 +327,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Let&apos;s_Go_Away_for_Awhile"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(album)"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(song)"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
