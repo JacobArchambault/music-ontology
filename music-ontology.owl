@@ -29,9 +29,7 @@
 
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Music_Artist"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
     
 
 
