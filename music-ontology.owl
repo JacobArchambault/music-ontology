@@ -1480,6 +1480,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Terry_Sachen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Terry_Sachen">
+        <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys">
@@ -1569,7 +1577,6 @@
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times"/>
-        <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
     </owl:NamedIndividual>
@@ -2407,6 +2414,59 @@
         <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Beach_Boys_Song"/>
     </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Barnyard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Cabin_Essence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Child_is_the_Father_of_the_Man"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Gee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Good_Vibrations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Heroes_and_Villains"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Holidays"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#In_Blue_Hawaii"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Look"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Love_to_Say_Dada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mike_Love"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#My_Only_Sunshine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#On_a_Holiday"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Our_Prayer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Roll_Plymouth_Rock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song_for_Children"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Terry_Sachen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Smile_Sessions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Vega-Tables"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wind_Chimes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wonderful"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Do_You_Like_Worms?"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_in_Great_Shape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_in_Great_Shape/I_Wanna_Be_Around/Workshop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Wanna_Be_Around_/_Workshop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Let&apos;s_Go_Away_for_Awhile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mrs._O&apos;Leary&apos;s_Cow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Old_Master_Painter/You_Are_My_Sunshine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Our_Prayer/Gee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(song)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Surf&apos;s_Up"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Elements:_Fire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
+        </owl:distinctMembers>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
