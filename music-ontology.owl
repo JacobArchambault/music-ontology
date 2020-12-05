@@ -1012,7 +1012,6 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
             </owl:Restriction>
         </rdf:type>
-        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows"/>
         <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Pet_Sounds_track_number>
