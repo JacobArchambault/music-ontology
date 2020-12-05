@@ -805,6 +805,7 @@
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Al_Jardine -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Al_Jardine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Beach_Boy"/>
         <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
     </owl:NamedIndividual>
     
@@ -950,7 +951,6 @@
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wind_Chimes"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wonderful"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me"/>
-        <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#_Fire"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Do_You_Like_Worms?"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)"/>
@@ -1887,7 +1887,6 @@
         <recorded_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wind_Chimes"/>
         <recorded_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wonderful"/>
         <recorded_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me"/>
-        <recorded_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#_Fire"/>
         <recorded_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No"/>
         <recorded_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Do_You_Like_Worms?"/>
         <recorded_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)"/>
@@ -1924,7 +1923,6 @@
         <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Vega-Tables"/>
         <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wind_Chimes"/>
         <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wonderful"/>
-        <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#_Fire"/>
         <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Do_You_Like_Worms?"/>
         <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_in_Great_Shape"/>
         <album_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Wanna_Be_Around_/_Workshop"/>
@@ -2157,38 +2155,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Pet_Sounds_track_number>
         <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</track_number>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#_Fire -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#_Fire">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Beach_Boys_Song"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#song_recorded_by"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Music_Artist"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#song_appears_on_album"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Smile_Sessions"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#song_recorded_by"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
-            </owl:Restriction>
-        </rdf:type>
-        <is_demo_of rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mrs._O&apos;Leary&apos;s_Cow"/>
-        <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Smile_Sessions"/>
-        <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
-        <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</track_number>
     </owl:NamedIndividual>
     
 
