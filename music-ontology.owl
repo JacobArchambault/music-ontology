@@ -272,12 +272,6 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#track_number"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-            </owl:Restriction>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
         <rdfs:range>
             <owl:Restriction>
@@ -333,7 +327,7 @@
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_track_number -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_track_number">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#track_number"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Beach_Boys_Song"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_Song"/>
@@ -364,7 +358,7 @@
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile_Sessions_track_number -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile_Sessions_track_number">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#track_number"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Beach_Boys_Song"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile_Sessions_Song"/>
@@ -395,7 +389,7 @@
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile_track_number -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile_track_number">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#track_number"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson_Song"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile_Song"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
@@ -421,21 +415,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#song_written_by"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#track_number -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#track_number">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#song_recorded_by"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Music_Artist"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
@@ -862,8 +841,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Smile_Sessions_track_number>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</track_number>
     </owl:NamedIndividual>
     
 
@@ -1053,8 +1030,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Smile_Sessions_track_number>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</track_number>
     </owl:NamedIndividual>
     
 
@@ -1141,8 +1116,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Smile_Sessions_track_number>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</track_number>
     </owl:NamedIndividual>
     
 
@@ -1174,7 +1147,6 @@
         <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Smile_Sessions"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</track_number>
     </owl:NamedIndividual>
     
 
@@ -1210,7 +1182,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</track_number>
     </owl:NamedIndividual>
     
 
@@ -1266,8 +1237,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</Smile_Sessions_track_number>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</track_number>
     </owl:NamedIndividual>
     
 
@@ -1302,7 +1271,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</track_number>
     </owl:NamedIndividual>
     
 
@@ -1358,8 +1326,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Smile_Sessions_track_number>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</track_number>
     </owl:NamedIndividual>
     
 
@@ -1393,7 +1359,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</track_number>
     </owl:NamedIndividual>
     
 
@@ -1433,7 +1398,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</track_number>
     </owl:NamedIndividual>
     
 
@@ -1467,7 +1431,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</track_number>
     </owl:NamedIndividual>
     
 
@@ -1501,7 +1464,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</track_number>
     </owl:NamedIndividual>
     
 
@@ -1583,7 +1545,6 @@
         <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Smile_Sessions"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</track_number>
     </owl:NamedIndividual>
     
 
@@ -1623,7 +1584,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</track_number>
     </owl:NamedIndividual>
     
 
@@ -1656,7 +1616,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</track_number>
     </owl:NamedIndividual>
     
 
@@ -1718,7 +1677,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</track_number>
     </owl:NamedIndividual>
     
 
@@ -1752,7 +1710,6 @@
         <song_has_lead_singer rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mike_Love"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</track_number>
     </owl:NamedIndividual>
     
 
@@ -1825,7 +1782,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</track_number>
     </owl:NamedIndividual>
     
 
@@ -2008,8 +1964,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</Smile_Sessions_track_number>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</track_number>
     </owl:NamedIndividual>
     
 
@@ -2064,7 +2018,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</track_number>
     </owl:NamedIndividual>
     
 
@@ -2119,7 +2072,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</track_number>
     </owl:NamedIndividual>
     
 
@@ -2154,7 +2106,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</track_number>
     </owl:NamedIndividual>
     
 
@@ -2189,7 +2140,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</track_number>
     </owl:NamedIndividual>
     
 
@@ -2223,7 +2173,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</track_number>
     </owl:NamedIndividual>
     
 
@@ -2258,7 +2207,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</track_number>
     </owl:NamedIndividual>
     
 
@@ -2294,7 +2242,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mike_Love"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</track_number>
     </owl:NamedIndividual>
     
 
@@ -2327,7 +2274,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</track_number>
     </owl:NamedIndividual>
     
 
@@ -2362,19 +2308,12 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#track_number"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-            </owl:Restriction>
-        </rdf:type>
         <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <track_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_in_Great_Shape"/>
         <track_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Wanna_Be_Around_/_Workshop"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</track_number>
     </owl:NamedIndividual>
     
 
@@ -2409,7 +2348,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</track_number>
     </owl:NamedIndividual>
     
 
@@ -2446,7 +2384,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mike_Love"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Terry_Sachen"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</track_number>
     </owl:NamedIndividual>
     
 
@@ -2479,7 +2416,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Smile_Sessions_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</track_number>
     </owl:NamedIndividual>
     
 
@@ -2513,7 +2449,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Instrumental>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</track_number>
     </owl:NamedIndividual>
     
 
@@ -2553,7 +2488,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</track_number>
     </owl:NamedIndividual>
     
 
@@ -2593,7 +2527,6 @@
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</track_number>
     </owl:NamedIndividual>
     
 
@@ -2628,19 +2561,12 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#track_number"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-            </owl:Restriction>
-        </rdf:type>
         <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <track_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Gee"/>
         <track_includes_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Our_Prayer"/>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</track_number>
     </owl:NamedIndividual>
     
 
@@ -2674,7 +2600,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Instrumental>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</track_number>
     </owl:NamedIndividual>
     
 
@@ -2730,8 +2655,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <Smile_Sessions_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Smile_Sessions_track_number>
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Smile_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</track_number>
     </owl:NamedIndividual>
     
 
@@ -2766,7 +2689,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</track_number>
     </owl:NamedIndividual>
     
 
@@ -2812,7 +2734,6 @@
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mike_Love"/>
         <song_written_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Pet_Sounds_track_number>
-        <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</track_number>
     </owl:NamedIndividual>
     
 
@@ -2995,6 +2916,62 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Al_Jardine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Barnyard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Brian_Wilson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Bruce_Johnston"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Cabin_Essence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Carl_Wilson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Child_is_the_Father_of_the_Man"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Gee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Good_Vibrations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Heroes_and_Villains"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Holidays"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#In_Blue_Hawaii"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Look"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Love_to_Say_Dada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mike_Love"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#My_Only_Sunshine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#On_a_Holiday"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Our_Prayer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Roll_Plymouth_Rock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Smile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song_for_Children"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Terry_Sachen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Smile_Sessions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Tony_Asher"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Vega-Tables"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wind_Chimes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wonderful"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#You_Still_Believe_in_Me"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Caroline,_No"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Do_You_Like_Worms?"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_in_Great_Shape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_in_Great_Shape/I_Wanna_Be_Around/Workshop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Wanna_Be_Around_/_Workshop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Let&apos;s_Go_Away_for_Awhile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mrs._O&apos;Leary&apos;s_Cow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Old_Master_Painter/You_Are_My_Sunshine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Our_Prayer/Gee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_(song)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Surf&apos;s_Up"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Elements:_Fire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
+        </owl:distinctMembers>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
