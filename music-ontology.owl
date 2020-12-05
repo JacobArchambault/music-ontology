@@ -296,6 +296,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Instrumental -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Instrumental">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_track_number -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_track_number">
@@ -714,6 +724,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Al_Jardine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Al_Jardine">
+        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Barnyard -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Barnyard">
@@ -816,9 +834,15 @@
         <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Don&apos;t_Talk_(Put_Your_Head_on_My_Shoulder)"/>
         <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day"/>
         <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Just_Wasn&apos;t_Made_for_These_Times"/>
-        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
-        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me"/>
         <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Bruce_Johnston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Bruce_Johnston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Beach_Boy"/>
     </owl:NamedIndividual>
     
 
@@ -869,6 +893,15 @@
         <Smile_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Smile_track_number>
         <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</track_number>
         <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</track_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Carl_Wilson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Carl_Wilson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Beach_Boy"/>
+        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows"/>
     </owl:NamedIndividual>
     
 
@@ -979,6 +1012,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
             </owl:Restriction>
         </rdf:type>
+        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#God_Only_Knows"/>
         <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Pet_Sounds_track_number>
@@ -1255,6 +1289,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Mike_Love">
         <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Beach_Boy"/>
+        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Here_Today"/>
+        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Sloop_John_B"/>
+        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
+        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#That&apos;s_Not_Me"/>
+        <sings_lead_on rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I&apos;m_Waiting_for_the_Day"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#I_Know_There&apos;s_an_Answer"/>
         <wrote_song rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Wouldn&apos;t_It_Be_Nice"/>
@@ -2117,6 +2156,7 @@
         </rdf:type>
         <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
+        <Instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Instrumental>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Pet_Sounds_track_number>
         <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</track_number>
     </owl:NamedIndividual>
@@ -2255,6 +2295,7 @@
         </rdf:type>
         <song_appears_on_album rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#Pet_Sounds_album"/>
         <song_recorded_by rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/10/music-ontology#The_Beach_Boys"/>
+        <Instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Instrumental>
         <Pet_Sounds_track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Pet_Sounds_track_number>
         <track_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</track_number>
     </owl:NamedIndividual>
